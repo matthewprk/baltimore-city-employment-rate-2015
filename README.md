@@ -13,6 +13,6 @@ How can Baltimore City's predict and increase its employment rate by examing fac
   - [Poverty Rates](https://github.com/matthewprk/baltimore-city-employment-rate-2015/blob/master/shown_tract_poor_share2016.xls)
   - [Commute Time <15min](https://github.com/matthewprk/baltimore-city-employment-rate-2015/blob/master/shown_tract_traveltime15_2016.xls)
   - [Employment Rates](https://github.com/matthewprk/baltimore-city-employment-rate-2015/blob/master/baltimore_working_rP_gP_pall.xls)
-
 ## Data Analysis
+
 ## Summary and Next Steps

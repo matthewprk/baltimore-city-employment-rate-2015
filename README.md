@@ -19,10 +19,11 @@ The data questions that the analysis will answer:
 ![alt text](https://github.com/matthewprk/baltimore-city-employment-rate-2015/commit/ae82633f7204e4845eb398dc863d423f6100d682)
 - Revised regression table shows that commute time <15min, poverty rate, and median HH income can be predictors of employment rate (p<0.05)
   - The equation used to predict employment rate is: Employment Rate = - 0.1278(traveltime15_2016) - 0.0680(poverty rate) + 2.0810E-06(median HH Income) + 0.6897
+  - Rsquared = 0.37 -> 37% of the variation can be explained by the inputs -> still need to identify more significant inputs
 ![alt text](https://github.com/matthewprk/baltimore-city-employment-rate-2015/blob/master/baltimore_working_rP_gP_pall.xls)
 - Linear Regession for Employment Rate and Poverty Rate Visualization
-  - Rsquared = 0.2294 -> less than a quarter of the observed relationship is explained by poverty rate
+  - Rsquared = 0.2294 -> 23% of the observed variation is explained by poverty rate -> need to consider other variables in prediction
   - Slope = -0.1913 -> for every 1 unit increase in poverty rate, employment rate decreases by -0.1913
 ![alt text](https://github.com/matthewprk/baltimore-city-employment-rate-2015/blob/master/linreg_povertyrate.png)
-
 ## Summary and Next Steps
+It was determined that job density and job growth are not helpful predictors for employment rate in Baltimore. Although commute time <15min, poverty rate, and median HH income can be used to predict employment rate, they are not the strongest predictors given 63% of the variation is explained by other factors. To determine factors that would better predict employment rate in Baltimore, it would he helpful to look at education status, regional industries/roles, and skillsets. These would hopefully explain any structural disconnects between employers and employees/job seekers. 

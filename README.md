@@ -15,6 +15,9 @@ How can Baltimore City's predict and increase its employment rate by examing fac
   - [Employment Rates](https://github.com/matthewprk/baltimore-city-employment-rate-2015/blob/master/baltimore_working_rP_gP_pall.xls)
 ## Data Analysis
 The data questions that the analysis will answer:
-  - 
+- Initial regression table shows that job density and job growth do not explain employment rate (p>0.05)
+![alt text](https://github.com/matthewprk/baltimore-city-employment-rate-2015/commit/ae82633f7204e4845eb398dc863d423f6100d682)
+- Revised regression table shows that commute time <15min, poverty rate, and median HH income can be predictors of employment rate (p<0.05)
+
 
 ## Summary and Next Steps

@@ -1,0 +1,54 @@
+*CONSOLIDATED DATASET
+Open downloaded Employment Rate dataset from Opportunity Atlas and select the column with location data
+Click Data tab, click Test-to-Column, click "," delimiter, and confirm that 3 columns will be created
+Label the new columns: Neighborhood, City, State
+Select the City column and filter by Baltimore
+Create 5 new columns: traveltime15_2016 (fewer than 15min commute), poverty rate, median HH Income, job_density_2013 (per square mile), average_job_growth_2004_2013 (annualized growth rate of number of jobs)
+Open the Commute Time Opportunity Atlas worksheet the repository
+Use VLOOKUP in the modified worksheet to match and bring Commute Time data from the Commute Time worksheet, using tract as the unique identifier.
+Repeat step 7 and 8 for the remaining variables and original datasets
+
+*CORRELATION
+Start in consolidated dataset workbook
+Click Tools tab
+Select Data Analysis
+Select correlation
+Select columns and rows containing data for commute time, poverty rate, median HH income, job density, and job growth
+Confirm selection to insert a correlation table 
+
+*MULT_LIN_REG_INITIAL
+Start in consolidated dataset workbook
+Click Tools tab
+Select Data Analysis
+Select Regression
+For Y variables, select the entire Employment Rate column
+For X variables, select the entire commute time, poverty rate, median HH income, job density, and job growth columns
+Check boxes for Residuals and Labels
+Insert in a new workbook
+We see that job density and job growth are not statisically significant and can be removed in the next regression
+
+*MULT_LIN_REG_FINAL
+Start in consolidated dataset workbook
+Click Tools tab
+Select Data Analysis
+Select Regression
+For Y variables, select the entire Employment Rate column
+For X variables, select the entire commute time, poverty rate, median HH income columns
+Insert in a new workbook
+
+*MULT_LIN_REG_VISUALS
+Copy data from consolidated dataset workbook into a new workbook
+Ensure that the columns are making a visual for are adjacent with the Y-axis data being the column on the right and the X-axis column being the column on the left
+Select all column data containing Commute Time and Employment rate
+Right click and select Format Cells
+Select Percentage with 2 decimal points
+Click Insert tab
+Click Scatter Plot and select the first option
+Right click any datapoint on the chart 
+Click insert trendline
+Check boxes for displaying Rsquared and equation
+Click Chart Design Tab then Insert Chart elements
+Add "Employment Rate (%)" on the Y-axis and "Workers who Commute Less than 15min (%)" on the X-axis
+Click Insert Chart elements and select a legend
+Label the graph
+Repeat steps 2-13 for the Poverty Rate and median HH Income
